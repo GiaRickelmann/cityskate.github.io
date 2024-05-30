@@ -1,0 +1,87 @@
+/*  
+    Name:         Gia Rickelmann
+    Date:         04/24/23
+    Description:  This is Skate City Home css page (layout 5)
+*/
+@media all {
+	.gone {display: none;}
+	a {text-decoration: none; color: #000;}
+	header ul {display: flex; margin: 0;}
+	header li {padding: 10px;}
+	li {list-style: none;}
+}
+
+@media screen {
+ .caps {text-transform: uppercase;}
+ .container {width: 1020px; margin: auto;}
+ body {margin: 0; font: 400 18px/2 'Open Sans', sans-serif;}
+ .textaligncenter {text-align: center;}
+
+ a:hover, a:focus {outline: 3px solid #D15B00; border: 2px dotted #000; padding: 2px;}
+ .alta:hover, .alta:focus {border: 2px dotted #fff;}
+ 
+ .darkbackground {background: #000;}
+ .lttext {color: #fff;}
+ .absolute {position: absolute;}
+ .grid {display: grid;}
+ .orangeborder {border-bottom: 8px solid darkorange;}
+ .relative {position: relative;}
+
+ /*header*/
+ header {background: url('layout5assets/city-skate-hero.webp'); height: 567px; width: 100%;}
+ .jump {font-size: 18px; height: 30px; position: absolute; top: -2000px; background: #000;}
+ .jump:focus {top: 65px; left: 45px;}
+ header nav {display: flex; justify-content: space-between; color: #fff; margin: 0 20px;}
+ header h1 {font: 400 35px/1.3 'Righteous', cursive; margin: 15px 8px;}
+ 
+ header a {color: #fff; font: 400 33px/1.8 'Righteous', cursive;}
+
+ /*cities*/
+ .cities {padding: 82px 0 150px;}
+ .cities h2 {font: 400 34px/1.9 'Open Sans', sans-serif;}
+ .cities {font-size: 17.5px;}
+
+ /*feature*/
+ .featureimgfirst {background: url('layout5assets/vintage-decks.webp') no-repeat; height: 340px; width: 66.7%;}
+ .featureimgnext {background: url('layout5assets/skateboarder-daytime.webp') no-repeat; height: 504px; width: 66.7%; margin-left: auto;}
+ .featureimgend {background: url('layout5assets/skateboarder-blurred-motion.webp') no-repeat; height: 538px; width: 100%;}
+ .featureimgnextlast {background: url('layout5assets/skateboard-icon.png') no-repeat; height: 48px; width: 142px; margin: 85px auto;}
+ .featureimgnextlastcontain {width: 340px; height: 524px; top: 0; right: 0;}
+ .featureimglast {background: url('layout5assets/skateboarder-sunset-silhouette.webp') no-repeat; height: 420px; width: 340px;}
+ .featureimglastcontain {top: 340px; left: 0; width: 340px; height: 730px;}
+ .featureimglastcontain p, .featureimgnextlastcontain p {padding: 0 23px; margin: 5px 0 0}
+ .featureimgnextlastcontain h2 {margin: 142px 0 0;}
+ .featureimglastcontain h2 {margin: 75px 0 0;}
+ .featureimglastcontain h2, .featureimgnextlastcontain h2 {font: 600 18px/1.3 'Open Sans', sans-serif;}
+
+ /*sale*/
+ .sale h2 {margin: 52px 0 32px; font: 600 42px/1.8 'Righteous', cursive;}
+ .salecontain {grid-template-columns: repeat(3, 1fr); justify-items: center; width: 88%; margin: 0 auto 82px;}
+ .sale div a div {height: 220px; width: 260px;}
+ .sale h3 {font: 600 30px/2 'Open Sans', sans-serif; margin: 0;}
+ .salefirst {background: url('layout5assets/trucks.webp') no-repeat;}
+ .salenext {background: url('layout5assets/bearings.webp') no-repeat;}
+ .salelast {background: url('layout5assets/wheels.webp') no-repeat;}
+
+ /*footer*/
+ footer {background: #979799; font: 600 16px/2 'Open Sans', sans-serif;}
+ .footercontain {grid-template-columns: repeat(4, 1fr); grid-gap: 20px; padding: 10px 80px;}
+ .footitemfirst {padding-top: 20px;}
+ .footitemfirst p {margin: 0;}
+ .footitemnext {padding-left: 80px;}
+ .social {margin: 0; padding: 0;}
+ .social, .socialcontain p {display: flex; justify-content: flex-end;}
+ .social a {height: 35px; width: 40px; display: block; margin: 30px 0 0 23px;}
+ .socialfirst {background: url('layout5assets/social-media.webp') no-repeat -0 -3px;}
+ .socialnext {background: url('layout5assets/social-media.webp') no-repeat -63px -3px;}
+ .sociallast {background: url('layout5assets/social-media.webp') no-repeat -130px -2px;}
+ .socialcontain p {margin: 25px 0 0; font-size: 12px;}
+
+}
+
+@media print {
+	.social, .jump, .cities {display: none;}
+	h3 {float: left; padding: 20px;}
+	.footercontain, .footercontain div {float: left;}
+	.footercontain div {margin-left: 25px;}
+}
