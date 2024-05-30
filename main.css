@@ -47,7 +47,7 @@
  .featureimgend {background: url('layout5assets/skateboarder-blurred-motion.webp') no-repeat; height: 538px; width: 100%;}
  .featureimgnextlast {background: url('layout5assets/skateboard-icon.png') no-repeat; height: 48px; width: 142px; margin: 85px auto;}
  .featureimgnextlastcontain {width: 340px; height: 524px; top: 0; right: 0;}
- .featureimglast {background: url('layout5assets/skateboarder-sunset-silhouette.webp') no-repeat; height: 420px; width: 340px;}
+ .featureimglast {background: url('layout5assets/skateboarder-sunset-silhouette.webp') no-repeat center; height: 420px; width: 100%;}
  .featureimglastcontain {top: 340px; left: 0; width: 340px; height: 730px;}
  .featureimglastcontain p, .featureimgnextlastcontain p {padding: 0 23px; margin: 5px 0 0}
  .featureimgnextlastcontain h2 {margin: 142px 0 0;}
@@ -65,7 +65,7 @@
 
  /*footer*/
  footer {background: #979799; font: 600 16px/2 'Open Sans', sans-serif;}
- .footercontain {grid-template-columns: repeat(4, 1fr); grid-gap: 20px; padding: 10px 80px;}
+ .footercontain {grid-template-columns: repeat(4, 1fr); column-gap: 20px; padding: 10px 80px;}
  .footitemfirst {padding-top: 20px;}
  .footitemfirst p {margin: 0;}
  .footitemnext {padding-left: 80px;}
@@ -84,4 +84,20 @@
 	h3 {float: left; padding: 20px;}
 	.footercontain, .footercontain div {float: left;}
 	.footercontain div {margin-left: 25px;}
+}
+
+@media screen and (max-width: 1035px) {
+	.container {width: 100%;}
+}
+
+@media screen and (max-width: 890px) {
+	body {font-size: 16px;}
+	.cities {padding: 82px 0 100px;}
+	.cities h2 {padding: 0 40px;}
+	.featureimglastcontain, .featureimgnextlastcontain {width: 33.3%;}
+	.sale h2 {margin-top: 30px;}
+	.salecontain {grid-template-columns: repeat(1, 1fr); margin-bottom: 30px;}
+	.footercontain {grid-template-columns: repeat(2, 1fr);}
+	.socialcontain p, .social {justify-content: center;}
+	.footitemfirst {padding: 20px 40px;}
 }
